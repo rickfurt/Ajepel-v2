@@ -23,7 +23,7 @@ app.set('view engine', 'handlebars');
 // });
 
 
-app.route('/').get(function (req, res) {
+app.route('https://ajepel.herokuapp.com/').get(function (req, res) {
   res.sendFile(path.join(__dirname + '/index.html'))
   })
 
