@@ -6,8 +6,13 @@ var mailgun = require("mailgun-js");
 var api_key = 'key-c61398ae1c9650d6a7e2f73a8f81e5f9';
 var DOMAIN = 'https://api.mailgun.net/v3/sandboxa3abcd588ea44d5083b76ca76719eeb9.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: DOMAIN});''
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 const PORT = process.env.PORT || 5000;
 const app = express();
+
+
+
 
 
 app.use(express.static('public'));
@@ -45,18 +50,19 @@ app.route('/contato.html').get(function (req, res) {
 
 app.post('/send',(req, res)=> {
   console.log(req.body);
+  var name = req.body.nome;
+  var phone = req.body.fone;
+  var mail = req.body.mail;
+  var mensagem = req.body.msg;
 
-
-  var data = {
-    from: 'WEBSITE <me@samples.mailgun.org>',
-    to: 'ricardofutado26@hotmail.com',
-    subject: 'Hello',
-    text: 'Testing some Mailgun awesomness!'
+  const msg = {
+    to: 'ricardofurtado26@hotmail.com',
+    from: mail,
+    subject: 'From Website',
+    text: mensagem 
+    // html: '<strong>and easy to do anywhere, even with Node.js</strong>',
   };
-
-  mailgun.messages().send(data, function (error, body) {
-    console.log(body);
-  });
+  sgMail.send(msg);
 
     res.render('contactSuccess')
   });
