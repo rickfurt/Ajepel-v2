@@ -8,6 +8,21 @@ a{
     color:white;
 }
 
+#menu-products{
+  width: 180px;
+  font-size: 14px;
+}
+
+.products{
+  width: 180px;
+  border-radius: 10px;
+  /* border:1px solid red; */
+}
+
+.card:hover{
+  opacity: 0.9;
+  /* border:1px solid gray; */
+}
 
 .logo{
   background-image: url('images/logo-small.jpg');

@@ -1,30 +1,11 @@
 $(document).ready(function() {
 
-  // $('#sobre-page').hide();
-  // $('#produtos-page').hide();
-  // $('#contato-page').hide();
-  //
-  // $('#sobre-btn, #sobre-btn2').click(function() {
-  //   $('#produtos-page').hide();
-  //   $('#contato-page').hide();
-  //   $('#slider-main').hide();
-  //   $('#sobre-page').show(500);
-  // });
-  //
-  // $('#servicos-btn,#servicos-btn2').click(function() {
-  //   $('#sobre-page').hide();
-  //   $('#contato-page').hide();
-  //   $('#slider-main').hide();
-  //   $('#produtos-page').show();
-  // });
-  //
-  // $('#contato-btn,#contato-btn2,#contato-btn3').click(function() {
-  //   $('#sobre-page').hide();
-  //   $('#slider-main').hide();
-  //   $('#produtos-page').hide();
-  //   $('#contato-page').show();
-  // });
-  //
+$('.card').click(function () {
+    // $(".testing").removeClass("fa-arrow-right");
+    // $("#arrowBehaviour").addClass("fa-arrow-down");
+    alert('working');
+  }
+);
 
 // Form validation
   $('#contato-fone').keyup(function () {
