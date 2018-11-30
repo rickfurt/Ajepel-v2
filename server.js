@@ -2,13 +2,13 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
 const exphbs  = require('express-handlebars');
-// const nodemailer = require('nodemailer');
-// var mailgun = require("mailgun-js");
-// var api_key = 'key-c61398ae1c9650d6a7e2f73a8f81e5f9';
-// var DOMAIN = 'https://app.mailgun.com/app/domains/sandboxa3abcd588ea44d5083b76ca76719eeb9.mailgun.org';
-// var mailgun = require('mailgun-js')({apiKey: api_key, domain: DOMAIN});
-const PORT = process.env.PORT;
+var mailgun = require("mailgun-js");
+var api_key = 'key-c61398ae1c9650d6a7e2f73a8f81e5f9';
+var DOMAIN = 'https://api.mailgun.net/v3/sandboxa3abcd588ea44d5083b76ca76719eeb9.mailgun.org';
+var mailgun = require('mailgun-js')({apiKey: api_key, domain: DOMAIN});''
+const PORT = process.env.PORT || 5000;
 const app = express();
+
 
 app.use(express.static('public'));
 
@@ -45,6 +45,19 @@ app.route('/contato.html').get(function (req, res) {
 
 app.post('/send',(req, res)=> {
   console.log(req.body);
+
+
+  var data = {
+    from: 'WEBSITE <me@samples.mailgun.org>',
+    to: 'ricardofutado26@hotmail.com',
+    subject: 'Hello',
+    text: 'Testing some Mailgun awesomness!'
+  };
+
+  mailgun.messages().send(data, function (error, body) {
+    console.log(body);
+  });
+
     res.render('contactSuccess')
   });
 //   });
@@ -52,6 +65,7 @@ app.post('/send',(req, res)=> {
 
 app.post('/contato',(req, res)=> {
   console.log(req.body);
+
 // const output = `
 //       <p>You have a new contact request</p>
 //       <h3>Contact Details :</h3>
