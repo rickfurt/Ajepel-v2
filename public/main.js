@@ -1,11 +1,16 @@
 $(document).ready(function() {
-
-$('.card').click(function () {
-    // $(".testing").removeClass("fa-arrow-right");
-    // $("#arrowBehaviour").addClass("fa-arrow-down");
-    alert('working');
-  }
-);
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
 
 // Form validation
   $('#contato-fone').keyup(function () {
@@ -88,3 +93,184 @@ function valida() {
     $( "#form-fields" ).attr( "action", "contato" );
   }
 };
+
+$('#btn1').click(function () {
+  $('#celofane').show();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn2').click(function () {
+  $('#celofane').hide();
+  $('#cupom').show();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn3').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').show();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn4').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').show();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn5').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').show();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn6').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').show();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn7').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').show();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn8').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').show();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn9').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').show();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn10').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').show();
+  $('#sacolas').hide();
+  $('#sacos').hide();
+  }
+)
+$('#btn11').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').show();
+  $('#sacos').hide();
+  }
+)
+$('#btn12').click(function () {
+  $('#celofane').hide();
+  $('#cupom').hide();
+  $('#descartaveis').hide();
+  $('#embalagens').hide();
+  $('#escritorio').hide();
+  $('#etiquetas').hide();
+  $('#fitas').hide();
+  $('#limpeza').hide();
+  $('#maquinas').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').show();
+  }
+)
