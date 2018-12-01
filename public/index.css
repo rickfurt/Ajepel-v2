@@ -216,6 +216,9 @@ font-size: 3em
   justify-content: center;
 }
 
+#title-modal-small-screen{
+  display: none;
+}
 
 #error-nome , #error-fone ,#error-mail , #error-msg{
   display: none;
@@ -252,6 +255,14 @@ font-size: 3em
     width: 10px;
     top: 0px;
   }
+
+#title-modal-small-screen{
+  display: block;
+}
+
+#logo-modal{
+  display: none;
+}
 
   .cp1{
     font-size: 50px;

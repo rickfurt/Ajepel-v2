@@ -57,12 +57,12 @@
         <div class="form-row">
           <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
             <label for="Nome">Nome</label>
-            <input type="text" class="form-control" name="nome" id="contato-nome" placeholder="Nome">
+            <input type="text" class="form-control" name="name" id="contato-nome" placeholder="Nome">
             <p class="bg-danger mt-2" id="error-nome">*** Favor preencher esse campo !</p>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12 mb-3">
             <label for="Fone">Fone</label>
-            <input type="tel" class="form-control" name="fone" id="contato-fone" placeholder="Fone para contato">
+            <input type="tel" class="form-control" name="phone" id="contato-fone" placeholder="Fone para contato">
             <p class="bg-danger mt-2" id="error-fone">*** Favor preencher esse campo !</p>
           </div>
           <div class="col-md-12 col-sm-12 col-xs-12 mb-3">
@@ -72,7 +72,7 @@
           </div>
           <div class="form-group col-12">
             <label for="Mensagem">Mensagem</label>
-            <textarea class="form-control" id="contato-msg" name="msg"rows="3" placeholder="Conte nos sobre seu negocio e como podemos lhe ajudar."></textarea>
+            <textarea class="form-control" id="contato-msg" name="textmsg"rows="3" placeholder="Conte nos sobre seu negocio e como podemos lhe ajudar."></textarea>
             <p class="bg-danger mt-2" id="error-msg">*** Favor preencher esse campo !</p>
           </div>
           <button id="submit-btn" class="btn btn-primary disab" type="submit" onclick="valida();">Enviar Mensagem</button>
@@ -106,7 +106,8 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header" style="background-color: #1c1f64;border-bottom:2px solid white">
-          <a name="top" <img class="logo"></a>
+          <a href="index.html"<img id="logo-modal" class="logo"></a>
+          <h1 id="title-modal-small-screen" class="display-4 cp2">Contato</h1>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
             <span aria-hidden="true">&times;</span>
           </button>
