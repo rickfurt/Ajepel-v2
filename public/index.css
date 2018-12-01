@@ -223,11 +223,11 @@ color:white
   border: 1px solid red;
   border-radius: 5px;
   text-align: center;
-  animation:pulse 2s infinite ease;
+  animation:alertt 2s infinite ease;
 
 }
 
-@keyframes pulse {
+@keyframes alertt {
   /* 0%{
     border: 1px solid red;
   } */
