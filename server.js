@@ -52,10 +52,10 @@ app.post('/send', (req, res) => {
     html: '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">' +
       '<div class="jumbotron jumbotron-fluid bg-dark text-white border-custom">' +
       '<div class="container">' +
-      '<p>Mensagem De : ' + name + '</p>' +
-      '<p>E-mail : ' + mail + '</p>' +
-      '<p>Telefone para Contato : ' + phone + '</p><hr>' +
-      '<p>Mensagem : ' + text + '</p><hr>' +
+      '<p><strong>Mensagem De : </strong> ' + name + '</p>' +
+      '<p><strong>E-mail : </strong>' + mail + '</p>' +
+      '<p><strong>Telefone para Contato : </strong>' + phone + '</p><hr>' +
+      '<p><strong>Mensagem : </strong>' + text + '</p>' +
       '</div></div>'
   };
   sgMail.send(msg);
