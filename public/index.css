@@ -25,23 +25,26 @@ a{
 }
 
 .logo{
-  background-image: url('images/logo-small.jpg');
+  background-image: url('images/logo-edit.jpg');
   background-size:contain;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 10px;
   z-index: 1030;
-  min-height: 70px;
-  min-width: 70px;
+  height: 100px;
+  width: 100px;
   border-radius:50%;
   background-color: white;
   border: 2px solid white;
-  background-color:white;
   border-radius:50%;
 }
-
+#logo-modal{
+  height: 80px;
+  width: 80px;
+  top: 3px;
+}
 
 .menu-box-container{
   height: 300px;
@@ -68,7 +71,7 @@ height: 150px;
 
 .sobre-img{
   float: right;
-  height: 250px;
+  height: 200px;
   padding: 20px;
   background-color: white;
   border: 2px solid rgba(241, 26, 12, 0.72);
@@ -109,7 +112,10 @@ color:white
 }
 
 .card-text{
-  color:black
+  color:black;
+  /* Checar  */
+  min-height: 60px;
+  max-height: 80px;
 }
 
 .linha{
@@ -142,13 +148,22 @@ color:white
   /* font-size: 30px; */
 }
 
+.nav-item{
+  font-family: 'Audiowide', cursive;
+
+}
+
 .nav-link{
   float: right;
+  font-size: 17px;
+  border-bottom: 2px solid transparent;
 }
 
 .nav-link:hover{
-  font-weight:bold;
-  /* text-decoration:underline; */
+  border-bottom: 2px solid white;
+}
+
+.nav-item:hover{
 }
 
 .fb-ic , .ins-ic , .wp-ic{
@@ -249,9 +264,14 @@ color:white
 }
 @media (max-width: 575.98px) {
   .logo{
-    height: 10px;
-    width: 10px;
-    top: 0px;
+    height: 70px;
+    width: 70px;
+    top: 3px;
+  }
+  #logo-modal{
+    height: 70px;
+    width: 70px;
+    top: 3px;
   }
 
   .cp1{
