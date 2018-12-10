@@ -6,11 +6,11 @@ $(document).ready(function() {
   $('#escritorio').hide();
   $('#etiquetas').hide();
   $('#fitas').hide();
-  // $('#limpeza').hide();
+  $('#limpeza').hide();
   $('#maquinas').hide();
-  $('#plastico').hide();
-  $('#sacolas').hide();
-  $('#sacos').hide();
+  // $('#plastico').hide();
+  // $('#sacolas').hide();
+  // $('#sacos').hide();
 
 
 // Form validation
