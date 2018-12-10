@@ -50,7 +50,7 @@ app.post('/send', (req, res) => {
     subject: 'Contato realizado pelo Website',
     // text: req.body.textmsg,
     html: '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">' +
-      '<div class="jumbotron jumbotron-fluid bg-dark text-white border-custom">' +
+      '<div class="jumbotron jumbotron-fluid bg-light">' +
       '<div class="container">' +
       '<p><strong>Mensagem De : </strong> ' + name + '</p>' +
       '<p><strong>E-mail : </strong>' + mail + '</p>' +
