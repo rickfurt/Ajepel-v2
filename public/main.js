@@ -8,9 +8,9 @@ $(document).ready(function() {
   $('#fitas').hide();
   $('#limpeza').hide();
   $('#maquinas').hide();
-  // $('#plastico').hide();
-  // $('#sacolas').hide();
-  // $('#sacos').hide();
+  $('#plastico').hide();
+  $('#sacolas').hide();
+  $('#sacos').hide();
 
 
 // Form validation
