@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('#cupom').hide();
   $('#descartaveis').hide();
   $('#embalagens').hide();
-  $('#escritorio').hide();
+  // $('#escritorio').hide();
   $('#etiquetas').hide();
   $('#fitas').hide();
   $('#limpeza').hide();
