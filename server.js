@@ -47,12 +47,11 @@ app.post('/send', (req, res) => {
   const msg = {
     to: 'ricardofurtado26@hotmail.com',
     from: mail,
-    subject: 'Contato realizado pelo Website',
+    subject: name + 'Contato via Website',
     // text: req.body.textmsg,
     html: '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">' +
       '<div class="jumbotron jumbotron-fluid bg-light">' +
       '<div class="container">' +
-      '<p><strong>Mensagem De : </strong> ' + name + '</p>' +
       '<p><strong>E-mail : </strong>' + mail + '</p>' +
       '<p><strong>Telefone para Contato : </strong>' + phone + '</p><hr>' +
       '<p><strong>Mensagem : </strong>' + text + '</p>' +
