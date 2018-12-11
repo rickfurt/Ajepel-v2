@@ -2,7 +2,12 @@ body{
   background-color: #343a40;
 }
 
-
+.siga-nos-bar{
+  background-color: #1c1f64;
+  color:white;
+  border-top:0.5px solid white;
+  border-bottom:0.5px solid white;
+}
 
 a{
     color:white;
@@ -291,6 +296,18 @@ color:white
     top: 3px;
   }
 
+.title-page-text{
+  font-size: 20px;
+}
+
+.sobre-text{
+  font-size: 15px;
+}
+
+.produtos-text-phrase{
+  font-size: 15px;
+
+}
   .cp1{
     font-size: 50px;
   }
@@ -313,11 +330,21 @@ color:white
     height: 45vh;
   }
 
-  .clearfix{
-    height:0px;
-    width: auto;
-    /* background-color: blue; */
-    display: none;
+  .menu-products{
+    width: 140px;
+    font-size: 12px;
+  }
+
+  .category-product{
+    font-size: 18px;
+  }
+
+  .card{
+    width: 80%;
+  }
+
+  .card-text{
+    font-size: 13px;
   }
 
   .d-block{

@@ -10,7 +10,7 @@ $(document).ready(function() {
   $('#maquinas').hide();
   $('#plastico').hide();
   $('#sacolas').hide();
-  $('#sacos').hide();
+  // $('#sacos').hide();
 
 
 // Form validation
