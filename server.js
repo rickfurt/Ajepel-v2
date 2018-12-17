@@ -58,10 +58,30 @@ app.post('/send', (req, res) => {
   };
   sgMail.send(msg);
 // apos envio de email renderiza pagina com Mensagem de envio de email sucesso
-  res.render('contactSuccess')
+  res.render('contactSuccess',{msgSent:`
+    <div class="jumbotron jumbotron-fluid bg-dark text-white border-custom" id="contato-page">
+      <div class="container">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Muito Obrigado!</h4>
+          <p>E-mail enviado com sucesso!! Em breve entraremos em contato.</p>
+          <hr>
+          <p class="mb-0">Se preferir , contamos com canais de atendimento via Whatsapp e telefone.</p>
+        </div>
+      </div>
+    </div>`
+  })
 });
 
-app.post('/contato', (req, res) => {
-  res.render('contactError')
+app.post('/contatoError', (req, res) => {
+  res.render('contactError',{msgNotSent:`
+    <div class="jumbotron jumbotron-fluid bg-dark text-white" id="contato-page">
+      <div class="container">
+        <div class="alert alert-danger" role="alert">
+          <h4 class="alert-heading">Dados Incompletos</h4>
+          <p>Favor preencher todos os campos do contato</p>
+        </div>
+      </div>
+    </div>`
+  })
 });
 app.listen(PORT)

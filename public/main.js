@@ -27,7 +27,7 @@ $(document).ready(function() {
   $('#contato-mail').keyup(function() {
     var fone = document.getElementById('contato-fone').value;
 
-    if (fone === "" | fone === " ") {
+    if (fone === "" || fone === " " || fone.length<8) {
       $('#error-fone').show();
     } else {
       $('#error-fone').hide();
@@ -45,7 +45,7 @@ $(document).ready(function() {
   });
 
   $('#contato-nome,#contato-fone,#contato-mail,#contato-msg').keyup(function() {
-    if ($('#contato-nome').val().length > 1 && $('#contato-fone').val().length > 1 && $('#contato-mail').val().length > 1 && $('#contato-msg').val().length > 1) {
+    if ($('#contato-nome').val().length > 1 && $('#contato-fone').val().length > 7 && $('#contato-mail').val().length > 1 && $('#contato-msg').val().length > 1) {
       $('#submit-btn').removeClass('disab');
       $('#submit-btn').removeAttr('disabled');
     } else {
@@ -68,7 +68,7 @@ function valida() {
     $('#error-nome').show();
   };
 
-  if (fone.length < 2) {
+  if (fone.length < 8) {
     $('#error-fone').show();
   };
 
@@ -79,10 +79,10 @@ function valida() {
   if (msg.length < 2) {
     $('#error-msg').show();
   };
-  if (nome.length > 2 && fone.length > 2 && mail.length > 2 && msg.length > 2) {
+  if (nome.length > 2 && fone.length > 6 && mail.length > 2 && msg.length > 2) {
     $("#form-fields").attr("action", "send");
   } else {
-    $("#form-fields").attr("action", "contato");
+    $("#form-fields").attr("action", "contatoError");
   }
 };
 
