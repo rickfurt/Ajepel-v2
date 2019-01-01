@@ -45,7 +45,7 @@ app.post('/send', (req, res) => {
   var text = req.body.textmsg;
 
   const msg = {
-    to: 'ricardofurtado26@hotmail.com',
+    to: 'contato@ajepel.com.br',
     from: mail,
     subject: name + ' - Contato via Website',
     // text: req.body.textmsg,
