@@ -59,7 +59,7 @@ app.post('/send', (req, res) => {
   sgMail.send(msg);
 // apos envio de email renderiza pagina com Mensagem de envio de email sucesso
   res.render('contactSuccess',{msgSent:`
-    <div class="jumbotron jumbotron-fluid bg-dark text-white border-custom" id="contato-page">
+    <div class="jumbotron jumbotron-fluid bg-dark text-white" id="contato-page">
       <div class="container">
         <div class="alert alert-success" role="alert">
           <h4 class="alert-heading">Muito Obrigado!</h4>
