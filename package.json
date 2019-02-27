@@ -22,7 +22,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rickfurt/Ajepel-v2.0-website.git"
+    "url": "git+https://github.com/rickfurt/Ajepel.git"
   },
   "keywords": [
     "ajepel",
@@ -31,7 +31,7 @@
     "embalagens"
   ],
   "bugs": {
-    "url": "https://github.com/rickfurt/Ajepel-v2.0-website/issues"
+    "url": "https://github.com/rickfurt/Ajepel/issues"
   },
-  "homepage": "https://github.com/rickfurt/Ajepel-v2.0-website#readme"
+  "homepage": "https://github.com/rickfurt/Ajepel#readme"
 }
