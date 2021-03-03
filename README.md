@@ -1,11 +1,18 @@
-# Ajepel - WEBSITE.
+# website landing page - Ajepel 
 
-About Ajepel - Ajepel is a small packing company based in Brazil.
+## [Demo](http://www.ajepel.com.br/)
 
-For this project has been used some elements as listed below:
+This project was designed for a small packaging company in Brazil.
 
-HTML / CSS / Javascript(jQuery library)
-Bootstrap  / animate.css / font-awesome
-Nodejs / Express / Express-handlebars / SendGrid 
+Stack
++ [ExpressJs](http://expressjs.com/)
++ [Bootstrap](https://getbootstrap.com/)
++ [Handlebars](https://handlebarsjs.com/)
 
-Link = www.ajepel.com.br
+## Getting started
+
+After [cloning this repository](https://help.github.com/en/articles/cloning-a-repository), run:
+
+```shell
+npm install
+```
